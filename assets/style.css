@@ -1,9 +1,9 @@
 /* =========================================
    LYCÉE MARCEAU — STYLE PARTAGÉ
-   Variante 1 : "Prestige Classique" (Bleu nuit & Or)
+   Variante 1 : "Prestige Classique" (Bleu Marceau & Or)
    ========================================= */
 :root {
-    --primary-color: #0d1b2a;
+    --primary-color: #083F86;
     --secondary-color: #cda052;
     --bg-color: #fcfcfc;
     --text-color: #333333;
@@ -163,7 +163,7 @@ header {
     justify-content: center;
     text-align: center;
     background:
-        linear-gradient(rgba(13, 27, 42, 0.78), rgba(13, 27, 42, 0.78)),
+        linear-gradient(rgba(8, 63, 134, 0.78), rgba(8, 63, 134, 0.78)),
         url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Chartres_-_Lyc%C3%A9e_Marceau_%28cour_d%27honneur%29.JPG/1280px-Chartres_-_Lyc%C3%A9e_Marceau_%28cour_d%27honneur%29.JPG') center/cover;
     color: #ffffff;
     padding: 4rem 20px;

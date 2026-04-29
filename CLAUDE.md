@@ -33,7 +33,7 @@ contact          -> Coordonnées, carte OSM, formulaire, accès
 Variables dans `assets/style.css` (tout le CSS partagé, ~530 lignes) :
 
 ```
---primary-color: #0d1b2a    (bleu nuit)
+--primary-color: #083F86    (bleu Marceau, repris du nom du lycée sur le site officiel)
 --secondary-color: #cda052  (or doux / laiton)
 --bg-color:      #fcfcfc
 --text-color:    #333
