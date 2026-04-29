@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lycée de l'Excellence | Nouveau Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* =========================================
+           VARIANTES DE DESIGN (Décommentez celle que vous voulez)
+           ========================================= */
+
+        /* VARIANTE 1 : "Prestige Classique" (Inspiré Henri IV, Bleu Nuit & Or) */
+        :root {
+            --primary-color: #0d1b2a;      /* Bleu nuit très profond */
+            --secondary-color: #cda052;    /* Or doux / Laiton */
+            --bg-color: #fcfcfc;           /* Blanc cassé */
+            --text-color: #333333;         /* Gris très foncé pour le texte */
+            --card-bg: #ffffff;
+            --font-title: 'Playfair Display', serif;
+            --font-text: 'Inter', sans-serif;
+        }
+
+        /* VARIANTE 2 : "Innovation & Avenir" (Plus moderne, Vert Sapin & Cuivre) 
+           Pour l'utiliser, supprimez les balises de commentaires ci-dessous et commentez la Variante 1. */
+        
+        /*
+        :root {
+            --primary-color: #1b4332;      
+            --secondary-color: #e07a5f;    
+            --bg-color: #f4f1de;           
+            --text-color: #2b2d42;         
+            --card-bg: #ffffff;
+            --font-title: 'Playfair Display', serif;
+            --font-text: 'Inter', sans-serif;
+        }
+        */
+
+        /* =========================================
+           STYLES DE BASE ET RESET
+           ========================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-text);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .logo {
+            font-family: var(--font-title);
+            color: var(--primary-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--text-color);
+            transition: color 0.3s ease;
+        }
+
+        /* =========================================
+           NAVIGATION (HEADER)
+           ========================================= */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .btn-cta {
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            padding: 0.7rem 1.5rem;
+            border-radius: 3px;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s;
+        }
+
+        .btn-cta:hover {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* =========================================
+           HERO SECTION
+           ========================================= */
+        .hero {
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* Placeholder pour une belle image de l'établissement */
+            background: linear-gradient(rgba(13, 27, 42, 0.7), rgba(13, 27, 42, 0.7)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: #ffffff;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            color: #ffffff;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            font-weight: 300;
+        }
+
+        .hero .btn-cta {
+            font-size: 1.1rem;
+            padding: 1rem 2rem;
+        }
+
+        /* =========================================
+           SECTION : VALEURS / CARTES (Haute Conversion)
+           ========================================= */
+        .features {
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-top: 4px solid var(--secondary-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-link {
+            color: var(--secondary-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .card-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* =========================================
+           FOOTER
+           ========================================= */
+        footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        /* =========================================
+           RESPONSIVE
+           ========================================= */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* À remplacer par un menu hamburger en JS */
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête / Navigation -->
+    <header>
+        <div class="logo">Lycée Montesquieu</div> <!-- Nom fictif -->
+        <ul class="nav-links">
+            <li><a href="#">L'Établissement</a></li>
+            <li><a href="#">Formations</a></li>
+            <li><a href="#">Vie Lycéenne</a></li>
+            <li><a href="#">Actualités</a></li>
+        </ul>
+        <a href="#" class="btn-cta">Admissions</a>
+    </header>
+
+    <!-- Section Héro (Bannière Principale) -->
+    <section class="hero">
+        <div>
+            <h1>Cultiver l'Excellence, Forger l'Avenir.</h1>
+            <p>Un encadrement d'exception et une pédagogie innovante pour préparer nos élèves aux grands défis de demain.</p>
+            <a href="#" class="btn-cta">Découvrir le Lycée</a>
+        </div>
+    </section>
+
+    <!-- Section Contenu (Cartes d'information) -->
+    <section class="features">
+        <h2>Nos Parcours d'Excellence</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Classes Préparatoires</h3>
+                <p>Des filières littéraires et scientifiques exigeantes, conçues pour intégrer les meilleures Grandes Écoles de France.</p>
+                <a href="#" class="card-link">En savoir plus &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Le Lycée Général</h3>
+                <p>Un socle de connaissances solide, un accompagnement personnalisé et une ouverture sur l'international dès la Seconde.</p>
+                <a href="#" class="card-link">Nos spécialités &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Rayonnement Culturel</h3>
+                <p>Parce que l'excellence n'est pas qu'académique, nous offrons un riche programme d'arts, de sports et d'engagements citoyens.</p>
+                <a href="#" class="card-link">La vie étudiante &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <h2 style="color: white; margin-bottom: 1rem;">Lycée Montesquieu</h2>
+        <p>12 Rue du Savoir, 75000 Paris | Tél : 01 23 45 67 89</p>
+        <p>&copy; 2026 Lycée Montesquieu. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

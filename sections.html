@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sections & Options — Lycée Marceau Chartres</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Lycée Marceau<small>Chartres · depuis 1887</small></a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+        <ul class="nav-links">
+            <li>
+                <a href="etablissement.html">L'Établissement</a>
+                <ul class="submenu">
+                    <li><a href="etablissement.html">Présentation</a></li>
+                    <li><a href="histoire.html">Histoire & Patrimoine</a></li>
+                    <li><a href="anciens-eleves.html">Anciens élèves illustres</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="formations.html" class="active">Formations</a>
+                <ul class="submenu">
+                    <li><a href="formations.html">Toutes les formations</a></li>
+                    <li><a href="cpge.html">Classes Préparatoires (CPGE)</a></li>
+                    <li><a href="sections.html">Sections & Options</a></li>
+                </ul>
+            </li>
+            <li class="no-caret"><a href="vie-lyceenne.html">Vie Lycéenne</a></li>
+            <li class="no-caret"><a href="actualites.html">Actualités</a></li>
+            <li class="no-caret"><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="actualites.html" class="btn-cta header-cta">Portes ouvertes</a>
+    </header>
+
+    <section class="hero short">
+        <div>
+            <span class="eyebrow">Au-delà du programme</span>
+            <h1>Sections & Options</h1>
+            <p>Sections européennes, sportives, BIA aéronautique, langues anciennes : un parcours sur mesure.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-head">
+            <span class="eyebrow">Sections européennes</span>
+            <h2>Une ouverture sur l'international</h2>
+            <p>Les sections européennes proposent un enseignement renforcé dans une langue étrangère et l'enseignement d'une discipline non linguistique en langue cible.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <span class="tag">Anglais</span>
+                <h3>Section européenne anglais</h3>
+                <p>De la Seconde à la Terminale, deux disciplines non linguistiques sont enseignées en anglais : <strong>physique-chimie</strong> et <strong>histoire-géographie</strong>.</p>
+                <a href="contact.html" class="card-link">Conditions d'accès &rarr;</a>
+            </div>
+            <div class="card">
+                <span class="tag">Allemand</span>
+                <h3>Section européenne allemand</h3>
+                <p>Section européenne en langue allemande, avec enseignement renforcé et possibilité d'obtenir la mention « section européenne » au Baccalauréat.</p>
+                <a href="contact.html" class="card-link">Conditions d'accès &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section alt">
+        <div class="section-head">
+            <span class="eyebrow">Sport haut niveau</span>
+            <h2>Sections sportives & Pôle Espoir</h2>
+            <p>Pour les élèves qui souhaitent conjuguer études et pratique sportive intensive, encadrés par des entraîneurs qualifiés.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <span class="tag">Pôle Espoir</span>
+                <h3>Handball</h3>
+                <p>Pôle Espoir Handball : structure d'excellence pour les jeunes joueurs et joueuses, en partenariat avec la Fédération Française de Handball.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Section sportive</span>
+                <h3>Basketball</h3>
+                <p>Section sportive basketball : entraînement hebdomadaire intégré à l'emploi du temps, compétitions UNSS.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Section sportive</span>
+                <h3>Plongée</h3>
+                <p>Section sportive plongée subaquatique : formation théorique et pratique, sorties en milieu naturel.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Section sportive</span>
+                <h3>Natation</h3>
+                <p>Section sportive natation : entraînement régulier, préparation aux compétitions UNSS et fédérales.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-head">
+            <span class="eyebrow">Options & langues</span>
+            <h2>Élargir ses horizons</h2>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <span class="tag">Aéronautique</span>
+                <h3>Brevet d'Initiation Aéronautique</h3>
+                <p>Le BIA est une formation théorique de <strong>40 heures</strong> sur l'aéronautique, sanctionnée par un examen national. Préparation aux métiers de l'air.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Langues vivantes</span>
+                <h3>Anglais · Allemand · Espagnol · Italien</h3>
+                <p>Quatre langues vivantes proposées en LV1, LV2 ou LV3 selon les profils, avec des sections européennes en anglais et allemand.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Langue rare</span>
+                <h3>Russe</h3>
+                <p>Le Lycée Marceau est l'un des rares établissements de l'Académie d'Orléans-Tours à proposer le russe en LV2 ou LV3.</p>
+            </div>
+            <div class="card">
+                <span class="tag">Langues anciennes</span>
+                <h3>Latin & Grec ancien</h3>
+                <p>Options de langues anciennes pour approfondir la culture classique, accessibles dès la classe de Seconde.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="brand">
+                <h3>Lycée Marceau</h3>
+                <p>Établissement public d'enseignement général et de classes préparatoires scientifiques, à Chartres depuis 1887.</p>
+                <p>2, rue Pierre Mendès-France<br>28006 Chartres Cedex<br>Tél. 02 37 91 62 00</p>
+                <div class="socials"><a href="#">f</a><a href="#">𝕏</a><a href="#">◎</a><a href="#">▶</a></div>
+            </div>
+            <div><h4>Établissement</h4><ul>
+                <li><a href="etablissement.html">Présentation</a></li>
+                <li><a href="histoire.html">Histoire & Patrimoine</a></li>
+                <li><a href="anciens-eleves.html">Anciens élèves</a></li>
+                <li><a href="vie-lyceenne.html">Internat & Restauration</a></li>
+            </ul></div>
+            <div><h4>Formations</h4><ul>
+                <li><a href="formations.html">Lycée général</a></li>
+                <li><a href="cpge.html">CPGE MPSI / PCSI</a></li>
+                <li><a href="cpge.html">CPGE MP / PC</a></li>
+                <li><a href="sections.html">Sections sportives</a></li>
+            </ul></div>
+            <div><h4>Liens utiles</h4><ul>
+                <li><a href="https://www.education.gouv.fr/annuaire/28006/chartres/lycee/0280007f/lycee-marceau.html" target="_blank" rel="noopener">Annuaire MEN</a></li>
+                <li><a href="https://www.onisep.fr/ressources/structures-enseignement/centre-val-de-loire/eure-et-loir/lycee-marceau" target="_blank" rel="noopener">Fiche Onisep</a></li>
+                <li><a href="https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=3724" target="_blank" rel="noopener">Parcoursup CPGE</a></li>
+                <li><a href="https://www.ac-orleans-tours.fr/" target="_blank" rel="noopener">Académie Orléans-Tours</a></li>
+            </ul></div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 Lycée Marceau — Chartres · <a href="https://lyc-marceau-chartres.tice.ac-orleans-tours.fr/eva/" target="_blank" rel="noopener">Site officiel</a></div>
+    </footer>
+
+</body>
+</html>
