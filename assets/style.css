@@ -46,12 +46,25 @@ header {
     z-index: 1000;
 }
 .logo {
-    font-size: 1.7rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+}
+.logo img {
+    height: 54px;
+    width: auto;
+    flex-shrink: 0;
+}
+.logo > span {
     display: flex;
     flex-direction: column;
     line-height: 1;
+    font-size: 1.55rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--font-title);
+    color: var(--primary-color);
 }
 .logo small {
     font-family: var(--font-text);
@@ -455,8 +468,16 @@ footer .brand h3 {
 footer .brand p { font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem; }
 footer ul { list-style: none; }
 footer ul li { margin-bottom: 0.6rem; }
-footer ul a { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
+footer ul a { color: rgba(255,255,255,0.8); font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.55rem; }
 footer ul a:hover { color: var(--secondary-color); }
+footer ul a img {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    padding: 2px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
 
 .socials { display: flex; gap: 0.7rem; margin-top: 1rem; }
 .socials a {
